@@ -181,7 +181,7 @@ public class HealthBar extends Actor
         {
             target = 0;
         }
-   }
+    }
 
     /**
      * setTarget will change the target value to whatever the user chooses
@@ -250,9 +250,4 @@ public class HealthBar extends Actor
         //Change this
         return current;
     }
-    
-    
-    
-    
-
 }
