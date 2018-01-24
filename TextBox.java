@@ -29,6 +29,12 @@ public class TextBox extends Actor
         display();
     }
     
+    /** 
+     * display setting how each text is going to look like and what color
+     * 
+     * @param there is no parameters
+     * @return Nothing is returned
+     */
     public void display()
     {
         if( border == true )
@@ -40,11 +46,23 @@ public class TextBox extends Actor
         setImage( ing );
     }
     
+    /**
+     * getText returns the textbox from the current value
+     * 
+     * @param there is no parameters
+     * @return text is returned
+     */
     public String getText()
     {
         return text;
     }
     
+    /**
+     * setText sets what the text is going to be and how its going to be
+     * 
+     * @param attaching message to setText
+     * @return Nothimng is returned
+     */
     public void setText( String message )
     {
         text = message;

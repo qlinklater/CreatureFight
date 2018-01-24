@@ -37,43 +37,59 @@ public class Creature extends Actor
         healthNumber = health;
         creatureBar = new HealthBar( healthNumber, healthNumber, 10 );
         type = creatureType;
-        playerOneCreature = true;
+        playerOneCreature = isPlayerOne;
     }
     
+    /**
+     * getType gets the type of element a creature is 
+     * 
+     * @param there is no parameters
+     * @return returning the creatures type
+     */
     public String getType()
     {
         return type;
     }
     
+    /**
+     * HealthBar getting the current health value for creature
+     * 
+     * @param there is no prameters
+     * @return returning creatures health bar
+     */
     protected HealthBar getHealthBar()
     {
         return creatureBar;
     }
     
+    /**
+     * WhetherPlayerOne chicking if it's pl;ayer 1 or 2 turn 
+     * 
+     * @param there is no parameteres
+     * @return returning playerOneCreature turn
+     */
     public boolean getWhetherPlayerOne()
     {
         return playerOneCreature;
     }
    
-    /**
-     * attack is the code that is run when the Creature attacks its enemy
-     * 
-     * @param There are no parameters
-     * @return Nothing is returned
-     */
     public void attack( int idx )
     {
         //empty method that will get overriden in subclasses
         
     }
+    
+    public void switchCreature( int idx )
+    {
+        //empty method that will get overriden in subclasses
+        
+    }
+    
+    public void switchedIn()
+    {
+        //empty method that will get overriden in subclasses
+    }
 
-    /**
-     * act will complete actions that the Creature object should
-     * accomplish while the scenario is running
-     * 
-     * @param There are no parameters
-     * @return Nothing is returned
-     */
     public void act() 
     {
         //empty method that will get overriden in subclasses

@@ -8,6 +8,6 @@ public class SwitchCommands implements MenuCommands
 {
     public void execute( int idx, Creature c )
     {
-       
+       c.switchCreature(idx);
     }
 }
